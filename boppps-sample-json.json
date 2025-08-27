@@ -1,0 +1,31 @@
+{
+  "lessonTopic": "Introduction to Critical Thinking",
+  "bridgeIn": "Begin with a quick puzzle or optical illusion to demonstrate how our minds can be deceived. Ask students to share a time when they changed their opinion about something important. This connects to the lesson by showing that questioning our assumptions is valuable and necessary for clear thinking.",
+  "objective": "By the end of this lesson, students will be able to:\n• Define critical thinking and explain its key components\n• Identify common logical fallacies in everyday arguments\n• Apply the CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose) to evaluate sources\n• Demonstrate improved questioning techniques in group discussions",
+  "preAssessment": "Quick poll using clickers or hand-raising:\n• How confident are you in your ability to spot fake news? (1-5 scale)\n• Have you ever changed your mind about something important after learning new information?\n• What does 'critical thinking' mean to you? (write on sticky note)",
+  "activities": [
+    {
+      "duration": "15",
+      "facilitatorActivity": "Mini-lecture: Define critical thinking, present key components (analysis, evaluation, inference, interpretation). Use interactive slides with embedded questions.",
+      "materialsRequired": "PowerPoint slides, clicker system or polling app, whiteboard"
+    },
+    {
+      "duration": "20",
+      "facilitatorActivity": "Small group activity: Students work in teams of 3-4 to analyze news articles using provided criteria. Each group presents findings to class.",
+      "materialsRequired": "Printed news articles (mix of reliable and questionable sources), evaluation worksheets, flip chart paper"
+    },
+    {
+      "duration": "10",
+      "facilitatorActivity": "Interactive demonstration: Show examples of logical fallacies using current events and popular advertisements. Students identify the fallacy type.",
+      "materialsRequired": "Video clips, advertisement examples, logical fallacy reference sheet"
+    },
+    {
+      "duration": "15",
+      "facilitatorActivity": "Practice session: Students apply CRAAP test to websites they find on their phones. Peer sharing of results and discussion of challenges.",
+      "materialsRequired": "CRAAP test checklist handout, student smartphones/tablets, timer"
+    }
+  ],
+  "postAssessment": "Exit ticket with three questions:\n1. List two characteristics of a credible source\n2. Give an example of a logical fallacy you might encounter in social media\n3. Rate your confidence in evaluating information sources now (1-5 scale)\n\nAlso collect the completed CRAAP test worksheets for review.",
+  "summary": "Critical thinking involves actively analyzing, evaluating, and interpreting information rather than passively accepting it. Key skills include recognizing bias, identifying logical fallacies, and using systematic methods like the CRAAP test to evaluate sources. These skills are essential for academic success and informed citizenship in our information-rich society.",
+  "reflections": "What worked well:\n• Students were highly engaged with the news article analysis activity\n• The logical fallacy examples using advertisements resonated well\n• Interactive elements kept energy high throughout\n\nAreas for improvement:\n• Need more time for the CRAAP test practice - students rushed through it\n• Some groups finished the article analysis much faster than others - need extension activities\n• Could use more diverse examples that reflect student backgrounds\n\nFor next time:\n• Add 5 more minutes to CRAAP test activity\n• Prepare advanced questions for early finishers\n• Research more culturally relevant examples for logical fallacies"
+}

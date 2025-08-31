@@ -81,6 +81,14 @@ const BopppsPlanner = () => {
     linkElement.click();
   };
 
+  const formatText = (value) => {
+    if (value === undefined || value === null) return '';
+    if (Array.isArray(value)) {
+      return value.map(item => String(item)).join('<br>');
+    }
+    return String(value).replace(/\n/g, '<br>');
+  };
+
   const handlePrint = () => {
     const printContent = `
 <!DOCTYPE html>
@@ -193,14 +201,14 @@ const BopppsPlanner = () => {
         
         <tr>
             <td class="section-header">Bridge-In</td>
-            <td class="content" colspan="3">${lessonData.bridgeIn ? lessonData.bridgeIn.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content" colspan="3">${formatText(lessonData.bridgeIn)}</td>
         </tr>
-        
+
         <tr>
             <td class="section-header">Objective(s)</td>
-            <td class="content objectives-col">${lessonData.objective ? lessonData.objective.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content objectives-col">${formatText(lessonData.objective)}</td>
             <td class="section-header" style="width: 120px;">Pre-Assessment</td>
-            <td class="content pre-assessment-col">${lessonData.preAssessment ? lessonData.preAssessment.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content pre-assessment-col">${formatText(lessonData.preAssessment)}</td>
         </tr>
         
         <tr>
@@ -216,21 +224,21 @@ const BopppsPlanner = () => {
         ${lessonData.activities.map(activity => `
             <tr class="activity-row">
                 <td class="content duration-col">${activity.duration || ''}</td>
-                <td class="content activity-col">${activity.facilitatorActivity ? activity.facilitatorActivity.replace(/\n/g, '<br>') : ''}</td>
-                <td class="content materials-col">${activity.materialsRequired ? activity.materialsRequired.replace(/\n/g, '<br>') : ''}</td>
+                <td class="content activity-col">${formatText(activity.facilitatorActivity)}</td>
+                <td class="content materials-col">${formatText(activity.materialsRequired)}</td>
             </tr>
         `).join('')}
-        
+
         <tr>
             <td class="section-header">Post-Assessment</td>
-            <td class="content post-assessment-col">${lessonData.postAssessment ? lessonData.postAssessment.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content post-assessment-col">${formatText(lessonData.postAssessment)}</td>
             <td class="section-header" style="width: 120px;">Summary</td>
-            <td class="content summary-col">${lessonData.summary ? lessonData.summary.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content summary-col">${formatText(lessonData.summary)}</td>
         </tr>
-        
+
         <tr>
             <td class="section-header">Reflections on the Lesson</td>
-            <td class="content" colspan="3">${lessonData.reflections ? lessonData.reflections.replace(/\n/g, '<br>') : ''}</td>
+            <td class="content" colspan="3">${formatText(lessonData.reflections)}</td>
         </tr>
     </table>
 </body>

@@ -189,8 +189,6 @@ const BopppsPlanner = () => {
 <body>
     <div class="header">
         <h1>BOPPPS Lesson Planning Template</h1>
-        <p><strong>by Teaching and Learning Conestoga</strong><br>
-        (adapted from Instructional Skills Workshop (ISW) Handbook for Participants)</p>
     </div>
     
     <table>
@@ -431,8 +429,6 @@ const BopppsPlanner = () => {
     <div class="container">
         <div class="header">
             <h1>BOPPPS Lesson Planning Template</h1>
-            <p><strong>by Teaching and Learning Conestoga</strong><br>
-            (adapted from Instructional Skills Workshop (ISW) Handbook for Participants)</p>
         </div>
         
         <div class="table-container">
@@ -546,10 +542,6 @@ const BopppsPlanner = () => {
           <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">
             BOPPPS Lesson Planning Template
           </h1>
-          <p className="text-sm text-center text-gray-600 mb-4">
-            <strong>by Teaching and Learning Conestoga</strong><br/>
-            (adapted from Instructional Skills Workshop (ISW) Handbook for Participants)
-          </p>
           
           {/* File Operations */}
           <div className="flex justify-center gap-3 mb-6 no-print flex-wrap">

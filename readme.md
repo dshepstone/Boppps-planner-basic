@@ -1,132 +1,70 @@
-# BOPPPS Lesson Planning Template
+# BOPPPS Planner Basic
+A React-based lesson planning tool that guides instructors through the BOPPPS model (Bridge-in, Objectives, Pre-assessment, Presentation/Practice/Participation, Post-assessment, Summary) with printable and exportable outputs.
 
-A React-based interactive lesson planning tool following the BOPPPS instructional design model (Bridge-in, Objectives, Pre-assessment, Presentation/Practice/Participation, Post-assessment, Summary).
+## Recent Updates
+- Repository renamed to **Boppps-planner-basic** and remote updated accordingly.
+- Objective replacement bug fix merged into `main`, ensuring objectives are preserved when loading or exporting lesson data.
 
-## Features
+## Key Features
+- Structured BOPPPS lesson planner with dedicated fields for bridge-in, objectives, assessments, activities, summary, and reflections.
+- Dynamic activity rows with add/remove controls for Presentation/Practice/Participation steps.
+- JSON import/export for saving and restoring lesson plans, plus a bundled sample plan for quick starts.
+- HTML export and print-optimized layout for sharing or hard copies.
+- Inline guidance and placeholder text to help complete each section.
 
-- **Interactive Form**: Easy-to-use interface matching the original BOPPPS template
-- **Dynamic Activities**: Add or remove lesson activities as needed
-- **JSON Import/Export**: Save and load lesson plans for reuse
-- **Sample Template**: Load a pre-filled example to get started
-- **Responsive Design**: Works on desktop and mobile devices
-- **Print-Friendly**: Clean layout for printing lesson plans
+## Tech Stack
+- React 18 with Create React App toolchain (`react-scripts`).
+- Tailwind CSS (PostCSS build) for utility-first styling.
+- Lucide React for UI icons.
 
 ## Getting Started
-
 ### Prerequisites
-
-- Node.js (version 14 or higher)
-- npm or yarn package manager
+- Node.js 14 or higher (16+ recommended).
+- npm (comes with Node.js).
 
 ### Installation
-
-1. **Create the project folder:**
+1. Clone the repository:
    ```bash
-   mkdir boppps-planner
-   cd boppps-planner
+   git clone <your-remote-url> Boppps-planner-basic
+   cd Boppps-planner-basic
    ```
-
-2. **Create the folder structure:**
-   ```
-   boppps-planner/
-   ├── public/
-   │   └── index.html
-   ├── src/
-   │   ├── App.js
-   │   ├── index.js
-   │   ├── index.css
-   │   └── components/
-   │       └── BopppsPlanner.js
-   ├── package.json
-   └── README.md
-   ```
-
-3. **Copy all the provided files** into their respective folders
-
-4. **Install dependencies:**
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-5. **Start the development server:**
-   ```bash
-   npm start
-   ```
-
-6. **Open your browser** to `http://localhost:3000`
-
-## Usage
-
-### Creating a New Lesson Plan
-
-1. Fill out the **Lesson Topic** field
-2. Complete the **Bridge-In** section with your opening activity
-3. List your **Objectives** and **Pre-Assessment** methods
-4. Add **Activities** using the + button (include duration and materials)
-5. Define your **Post-Assessment** and **Summary**
-6. Add **Reflections** after teaching the lesson
-
-### Saving and Loading
-
-- **Save**: Click "Save JSON" to download your lesson plan
-- **Load**: Click "Upload JSON" to load a previously saved plan
-- **Sample**: Click "Load Sample" to see an example lesson plan
-
-### File Format
-
-Lesson plans are saved as JSON files with the following structure:
-
-```json
-{
-  "lessonTopic": "Your lesson topic",
-  "bridgeIn": "Opening activity description",
-  "objective": "Learning objectives",
-  "preAssessment": "Pre-assessment methods",
-  "activities": [
-    {
-      "duration": "15",
-      "facilitatorActivity": "Activity description",
-      "materialsRequired": "Materials list"
-    }
-  ],
-  "postAssessment": "Assessment methods",
-  "summary": "Key points summary",
-  "reflections": "Post-lesson reflections"
-}
-```
-
-## Building for Production
-
-To create a production build:
-
+### Run
+Start the development server (defaults to http://localhost:3000):
 ```bash
-npm run build
+npm start
 ```
 
-This creates a `build` folder with optimized files ready for deployment.
+## Scripts
+- `npm start` – Run the app in development mode.
+- `npm test` – Launch the test runner.
+- `npm run build` – Create an optimized production build.
+- `npm run eject` – Eject CRA configuration (irreversible).
 
-## BOPPPS Model
+## Project Structure
+- `src/App.js` – Top-level app component mounting the planner.
+- `src/index.js` – React entry point.
+- `src/index.css` – Global styles and Tailwind imports.
+- `src/components/BopppsPlanner.js` – Main planner UI with form logic, exports, printing, and sample loader.
+- `public/` – Static assets and HTML template.
+- `boppps-sample-json.json` – Example lesson plan for import.
 
-The template follows the BOPPPS instructional design model:
+## Configuration / Environment Variables
+None required.
 
-- **B**ridge-in: Connect with learners and introduce the topic
-- **O**bjectives: Clear learning goals
-- **P**re-assessment: Gauge prior knowledge
-- **P**resentation/**P**ractice/**P**articipation: Main learning activities
-- **P**ost-assessment: Evaluate learning outcomes
-- **S**ummary: Consolidate key points
-
-## Technologies Used
-
-- React 18
-- Tailwind CSS (via CDN)
-- Lucide React (for icons)
-- Modern JavaScript (ES6+)
+## Common Troubleshooting
+- **Port already in use**: Set `PORT=3001 npm start` to use a different port.
+- **Dependency errors**: Ensure Node.js is updated (14+) and reinstall packages with `rm -rf node_modules package-lock.json && npm install`.
+- **Styles not applying**: Restart `npm start` after dependency installs so Tailwind/PostCSS rebuilds.
+- **Blank page/build failures**: Clear the CRA cache with `npm start -- --reset-cache` or reinstall dependencies.
 
 ## Contributing
-
-Feel free to submit issues and enhancement requests!
+- Use `main` as the stable branch and develop new work on short-lived feature branches.
+- Keep pull requests focused and small for quicker reviews.
 
 ## License
-
-This project is designed for educational use by Teaching and Learning Conestoga, adapted from the Instructional Skills Workshop (ISW) Handbook for Participants.
+No license specified yet.
